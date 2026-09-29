@@ -1,0 +1,48 @@
+name: "📖 Leserstimme"
+description: "Was hat Kapitel 1 bei dir ausgelöst? Ehrlich, kurz, gern auch unfertig."
+title: "Leserstimme: "
+labels: ["leserstimme"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du gelesen hast. Es gibt hier keine falschen Antworten.
+        Fülle nur aus, was dir etwas sagt – ein einziger Satz ist schon viel.
+  - type: dropdown
+    id: gelesen
+    attributes:
+      label: Wie weit bist du gekommen?
+      options:
+        - Bis zum letzten Satz
+        - Bis zum Stapellauf der Sigrada
+        - Bis Wolfram auftaucht
+        - Nur die ersten Seiten
+    validations:
+      required: true
+  - type: textarea
+    id: geblieben
+    attributes:
+      label: Was ist hängen geblieben?
+      description: Ein Satz, eine Geste, eine Figur, ein Geräusch.
+  - type: textarea
+    id: gestolpert
+    attributes:
+      label: Wo bist du gestolpert?
+      description: Ein Wort, ein Name, eine Stelle, an der du raus warst.
+  - type: textarea
+    id: frage
+    attributes:
+      label: Welche Frage nimmst du mit?
+  - type: dropdown
+    id: weiter
+    attributes:
+      label: Würdest du Kapitel 2 lesen?
+      options:
+        - Ja, sofort
+        - Wahrscheinlich
+        - Weiss nicht
+        - Eher nicht
+  - type: textarea
+    id: sonst
+    attributes:
+      label: Sonst noch etwas?
